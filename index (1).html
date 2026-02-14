@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jualan Pop Ice</title>
+    
+    <!-- Hubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🥤 Jualan Pop Ice Segar</h1>
+        <p>Segar • Murah • Enak</p>
+    </header>
+
+    <div class="container">
+
+        <div class="produk">
+            <h2>Pop Ice Coklat</h2>
+            <p>Rp5.000</p>
+            <button onclick="tambahProduk('Pop Ice Coklat', 5000)">
+                Tambah ke Keranjang
+            </button>
+        </div>
+
+        <div class="produk">
+            <h2>Pop Ice Stroberi</h2>
+            <p>Rp5.000</p>
+            <button onclick="tambahProduk('Pop Ice Stroberi', 5000)">
+                Tambah ke Keranjang
+            </button>
+        </div>
+
+        <div class="produk">
+            <h2>Pop Ice Mangga</h2>
+            <p>Rp5.000</p>
+            <button onclick="tambahProduk('Pop Ice Mangga', 5000)">
+                Tambah ke Keranjang
+            </button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2>🛒 Keranjang (<span id="jumlahItem">0</span>)</h2>
+    <ul id="daftarKeranjang"></ul>
+    <h3 id="totalHarga">Total: Rp0</h3>
+
+    <button onclick="checkout()">Checkout</button>
+    <button onclick="kosongkan()">Kosongkan</button>
+
+    <!-- Hubungkan JavaScript (WAJIB di bawah sebelum </body>) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
